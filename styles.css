@@ -9,47 +9,43 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     transition: 0.7s;
     padding: 30px 20px;
     z-index: 10;
+    background: #fff;
 }
 
 header.abajo {
-    background: #fff;
-    padding: 15px 20px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
-    position: relative;
+.logo-menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     color: black;
     font-weight: bold;
     font-size: 2em;
     letter-spacing: 2px;
-    transition: 1.5s;
     text-decoration: none;
+    margin-right: 20px;
 }
 
 nav {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-header ul {
-    position: relative;
+ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li {
     list-style: none;
 }
 
-header ul li a {
-    position: relative;
+ul li a {
     font-family: helvetica;
     margin: 0 15px;
     text-decoration: none;
@@ -59,6 +55,71 @@ header ul li a {
     transition: 0.7s;
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo-menu {
+        width: 100%;
+    }
+
+    .logo {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar.open {
+        right: 0;
+    }
+}
+
+
 /* .background-photo {
     position: relative;
     width: 100%;
@@ -66,29 +127,3 @@ header ul li a {
     background-size: cover;
     background-position: center center;
 } */
-
-header.abajo .logo,
-header.abajo ul li a {
-    color: #000;
-}
-
-@media (max-width: 767px) {
-    header {
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-
-    header .logo {
-        font-size: 1.5em;
-    }
-
-    header ul {
-        margin-top: 10px;
-        flex-basis: 100%;
-        justify-content: space-between;
-    }
-
-    header ul li {
-        margin-bottom: 10px;
-    }
-}
