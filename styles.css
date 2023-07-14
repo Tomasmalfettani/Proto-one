@@ -84,6 +84,7 @@ ul li a {
     color: black;
     cursor: pointer;
     margin-left: auto;
+    margin-top: 6px;
 }
 
 @media (max-width: 768px) {
@@ -118,7 +119,6 @@ ul li a {
         right: 0;
     }
 }
-
 
 /* .background-photo {
     position: relative;
