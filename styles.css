@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* Header */
+
 header {
     position: fixed;
     top: 0;
@@ -12,13 +14,16 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.7s;
-    padding: 30px 20px;
+    padding: 10px 20px;
     z-index: 10;
     background: #fff;
 }
 
-header.abajo {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+header.abajo,
+nav.menu-open,
+.sidebar.open+main,
+.sidebar.open~header.abajo {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo-menu {
@@ -46,23 +51,28 @@ ul {
 }
 
 ul li a {
-    font-family: helvetica;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     margin: 0 15px;
     text-decoration: none;
     color: black;
     letter-spacing: 2px;
     font-weight: 600;
     transition: 0.7s;
+    font-size: 0.8em;
 }
+
+/* Header - Sidebar */
 
 .sidebar {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 300px;
+    right: -250px;
+    width: 250x;
     height: 100vh;
     background-color: #f1f1f1;
     transition: right 0.3s ease-in-out;
+    opacity: 95%;
 }
 
 .sidebar ul {
@@ -87,11 +97,13 @@ ul li a {
     margin-top: 6px;
 }
 
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        padding-top: 20px;
     }
 
     .logo-menu {
@@ -120,10 +132,28 @@ ul li a {
     }
 }
 
-/* .background-photo {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-} */
+/* Main */
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 11;
+}
+
+.whatsapp-icon:hover {
+    background-color: #128c7e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
