@@ -67,6 +67,11 @@ ul li a {
     font-size: 0.8em;
 }
 
+ul li a:hover {
+    color: #007ACC;
+    transition: 0.1s;
+}
+
 /* Header - Sidebar */
 
 .sidebar {
@@ -95,11 +100,11 @@ ul li a {
 
 .menu-toggle {
     display: none;
-    font-size: 24px;
-    color: black;
+    font-size: 32px;
+    color: #007ACC;
     cursor: pointer;
     margin-left: auto;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 
@@ -171,4 +176,21 @@ main {
 .whatsapp-icon:hover {
     background-color: #128c7e;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.boton-menu {
+    color: white;
+    background-color: #007ACC;
+    border: 2px solid #007ACC;
+    border-radius: 24px;
+    padding: 16px 18px;
+}
+
+.boton-menu:hover {
+    background-color: #007ACC;
+    color: white;
+}
+
+.color-pag-activa {
+    color: #007ACC;
 }
