@@ -28,7 +28,7 @@ header.abajo,
 nav.menu-open,
 .sidebar.open+main,
 .sidebar.open~header.abajo {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo-menu {
@@ -100,7 +100,7 @@ ul li a:hover {
 
 .menu-toggle {
     display: none;
-    font-size: 32px;
+    font-size: 26px;
     color: #007ACC;
     cursor: pointer;
     margin-left: auto;
@@ -146,12 +146,7 @@ ul li a:hover {
 
 main {
     margin-top: 85px;
-}
-
-@media (max-width: 768px) {
-    main {
-        margin-top: 110px;
-    }
+    font-family: 'Montserrat', sans-serif;
 }
 
 .whatsapp-icon {
@@ -193,4 +188,68 @@ main {
 
 .color-pag-activa {
     color: #007ACC;
+}
+
+.botones-principales {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-principal-negro {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.boton-principal {
+    display: inline-block;
+    background-color: #007ACC;
+    color: white;
+    padding: 12px 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.boton-principal:hover,
+.boton-principal-negro:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-principal {
+    color: #007ACC;
+    font-weight: bold;
+    font-size: 86px;
+}
+
+.parrafo-principal {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.foto-principal {
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 110px;
+    }
+    .titulo-principal {
+        font-size: 32px;
+    }
+    .parrafo-principal{
+        font-size: 18px;
+    }
+    .foto-principal {
+        width: 350px;
+    }
 }
