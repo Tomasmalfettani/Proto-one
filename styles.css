@@ -320,6 +320,41 @@ section div a {
     margin-right: 20px;
 }
 
+.titulo-desc-servicios {
+    font-size: 48px;
+    font-weight: 550;
+    margin-top: 15px;
+}
+
+.titulo-desc-servicios-2 {
+    font-size: 20px;
+    color: #007ACC;
+}
+
+.parrafo-desc-servicios {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.btn-descripcion {
+    display: inline-block;
+    background-color: #007ACC;
+    border: 1px solid #007ACC;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.btn-descripcion:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+
 @media (max-width: 768px) {
     main {
         margin-top: 110px;
@@ -361,6 +396,27 @@ section div a {
         margin-bottom: 10px;
         max-width: 250px;
     }
+
+
+    .titulo-desc-servicios {
+        font-size: 22px;
+    }
+
+    .titulo-desc-servicios-2 {
+        font-size: 14px;
+    }
+
+    .parrafo-desc-servicios {
+        font-size: 14px;
+        margin-top: 20px;
+
+    }
+
+    .btn-descripcion {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -368,7 +424,7 @@ section div a {
     .description-content img,
     .description-content-2 img {
         margin-bottom: 10px;
-        max-width: 375px;
+        max-width: 350px;
     }
 
     .cards-container {
