@@ -265,12 +265,12 @@ section div a {
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .cards {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -300,6 +300,26 @@ section div a {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.description-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-content-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-content img,
+.description-content-2 img {
+    max-width: 650px;
+    margin-right: 20px;
+}
+
 @media (max-width: 768px) {
     main {
         margin-top: 110px;
@@ -327,5 +347,18 @@ section div a {
 
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .description-content,
+    .description-content-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-content img,
+    .description-content-2 img {
+        margin-bottom: 10px;
+        max-width: 250px;
     }
 }

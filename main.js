@@ -53,25 +53,25 @@ function changeDescription(index) {
 
     switch (index) {
         case 0:
-            descripcion.innerHTML = '<h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p>';
+            descripcion.innerHTML = '<div class="description-content-2"><div><h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p></div><img src="img/desarrolloWebProto.png" alt="Imagen Desarrollo Web"></div>';
             break;
         case 1:
-            descripcion.innerHTML = '<h3>Descripción del servicio 2</h3><p>Aquí va la descripción del servicio 2.</p>';
+            descripcion.innerHTML = '<div class="description-content"><div><h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p></div><img src="img/ecomWebProto.png" alt="Imagen Ecommerce Web"></div>';
             break;
         case 2:
-            descripcion.innerHTML = '<h3>Descripción del servicio 3</h3><p>Aquí va la descripción del servicio 3.</p>';
+            descripcion.innerHTML = '<div class="description-content-2"><div><h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p></div><img src="img/mktDigitalProto.png" alt="Imagen Marketing Digital"></div>';
             break;
         case 3:
-            descripcion.innerHTML = '<h3>Descripción del servicio 4</h3><p>Aquí va la descripción del servicio 4.</p>';
+            descripcion.innerHTML = '<div class="description-content"><div><h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p></div><img src="img/seoProto.png" alt="Imagen SEO"></div>';
             break;
         case 4:
-            descripcion.innerHTML = '<h3>Descripción del servicio 5</h3><p>Aquí va la descripción del servicio 5.</p>';
+            descripcion.innerHTML = '<div class="description-content-2"><div><h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p></div><img src="img/brandingProto.png" alt="Imagen Branding"></div>';
             break;
         case 5:
-            descripcion.innerHTML = '<h3>Descripción del servicio 6</h3><p>Aquí va la descripción del servicio 6.</p>';
+            descripcion.innerHTML = '<div class="description-content"><div><h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p></div><img src="img/desarrolloAppsProto.png" alt="Imagen Desarrollo de Apps"></div>';
             break;
         default:
-            descripcion.innerHTML = '<h3>Descripción del servicio 1</h3><p>Aquí va la descripción del servicio 1.</p>';
+            descripcion.innerHTML = '<div class="description-content-2"><div><h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p></div><img src="img/desarrolloWebProto.png" alt="Imagen 1"></div>';
             break;
     }
 
