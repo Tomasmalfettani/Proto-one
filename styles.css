@@ -320,6 +320,40 @@ section div a {
     margin-right: 20px;
 }
 
+@keyframes enter-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes enter-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 769px) {
+    .description-enter-left {
+        animation: enter-left 0.5s ease-in-out;
+    }
+
+    .description-enter-right {
+        animation: enter-right 0.5s ease-in-out;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         margin-top: 110px;
@@ -360,5 +394,18 @@ section div a {
     .description-content-2 img {
         margin-bottom: 10px;
         max-width: 250px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .description-content img,
+    .description-content-2 img {
+        margin-bottom: 10px;
+        max-width: 375px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); /* En Ipad Air se rompe */
     }
 }

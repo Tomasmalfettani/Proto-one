@@ -51,6 +51,10 @@ function changeDescription(index) {
 
     cards[index].classList.add('active');
 
+    var contentClass = index % 2 === 0 ? 'description-enter-right' : 'description-enter-left';
+    descripcion.classList.remove('description-enter-left', 'description-enter-right');
+    descripcion.classList.add(contentClass);
+
     switch (index) {
         case 0:
             descripcion.innerHTML = '<div class="description-content-2"><div><h3>Descripción del servicio 1</h3><p>LLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime, iste ut quia et minimaoptio deserunt rem quis perspiciatis harum esse cum ratione est reiciendis eius, vero, molestiasplaceat.</p></div><img src="img/desarrolloWebProto.png" alt="Imagen Desarrollo Web"></div>';
