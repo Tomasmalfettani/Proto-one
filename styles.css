@@ -8,6 +8,13 @@ html {
     background-color: white;
 }
 
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* Header */
 
 header {
@@ -250,6 +257,11 @@ main {
     color: #007ACC;
 }
 
+section div a {
+    text-decoration: none;
+    color: black;
+}
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -274,8 +286,13 @@ main {
 }
 
 .cards:hover,
-.cards:hover i {
+.cards:hover i,
+.cards.active {
     background-color: #007ACC;
+    color: white;
+}
+
+.cards.active i {
     color: white;
 }
 
