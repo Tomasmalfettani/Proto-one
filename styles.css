@@ -400,10 +400,11 @@ section div a {
 
     .titulo-desc-servicios {
         font-size: 22px;
+        margin-top: 10px;
     }
 
     .titulo-desc-servicios-2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .parrafo-desc-servicios {
@@ -417,6 +418,11 @@ section div a {
         margin-bottom: 20px;
         margin-left: 0px;
     }
+
+    .description-content,
+    .description-content-2 {
+        flex-direction: column-reverse;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -428,10 +434,23 @@ section div a {
     }
 
     .cards-container {
-        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .cards p {
-        font-size: 14px;
+        font-size: 12px;
     }
+
+    .titulo-desc-servicios {
+        font-size: 40px;
+    }
+
+    .parrafo-desc-servicios {
+        font-size: 16px;
+    }
+
+    .titulo-desc-servicios-2 {
+        font-size: 18px;
+    }
+
 }
