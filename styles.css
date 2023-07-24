@@ -79,6 +79,10 @@ ul li a:hover {
     transition: 0.1s;
 }
 
+.mayuscula {
+    text-transform: uppercase;
+}
+
 /* Header - Sidebar */
 
 .sidebar {
@@ -252,7 +256,6 @@ main {
 }
 
 .titulo-segundo-2 {
-    font-weight: 550;
     font-size: 24px;
     color: #007ACC;
 }
@@ -355,7 +358,31 @@ section div a {
 
 }
 
-@media (max-width: 768px) {
+.titulo-crecimiento {
+    font-weight: bold;
+    font-size: 42px;
+    color: #007ACC;
+}
+
+.titulo-crecimiento-2 {
+    font-size: 24px;
+    color: #007ACC;
+}
+
+.titulo-crecimiento-3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.parrafo-crecimiento {
+    font-size: 14px;
+}
+
+.texto-azul {
+    color: #007ACC;
+}
+
+@media (max-width: 820px) {
     main {
         margin-top: 110px;
     }
@@ -423,9 +450,17 @@ section div a {
     .description-content-2 {
         flex-direction: column-reverse;
     }
+
+    .titulo-crecimiento {
+        font-size: 24px;
+    }
+
+    .titulo-crecimiento-2 {
+        font-size: 16px;
+    }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 821px) and (max-width: 1200px) {
 
     .description-content img,
     .description-content-2 img {
@@ -451,6 +486,7 @@ section div a {
 
     .titulo-desc-servicios-2 {
         font-size: 18px;
+        margin-top: 40px;
     }
 
 }
