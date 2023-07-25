@@ -1,10 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var header = document.querySelector("header");
-    var menuToggle = document.querySelector(".menu-toggle");
-    var sidebar = document.querySelector(".sidebar");
-    var navMenu = document.querySelector("nav");
+"use strict";
 
-    menuToggle.addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector(".sidebar");
+    const navMenu = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", toggleMenu);
+
+    function toggleMenu() {
         sidebar.classList.toggle("open");
         menuToggle.classList.toggle("open");
         navMenu.classList.toggle("menu-open");
@@ -20,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             menuToggle.innerHTML = '<i class="bi bi-list"></i>';
         }
-    });
+    }
 
     window.addEventListener("scroll", function () {
         if (!sidebar.classList.contains("open")) {
@@ -28,27 +32,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    var cards = document.querySelectorAll('.cards');
-    var descripcion = document.getElementById('descripcion');
+    const cards = document.querySelectorAll(".cards");
 
-    changeDescription(0); // Establecer la primera tarjeta como activa al cargar la página
+    changeDescription(0);
 
     cards.forEach(function (card, index) {
-        card.addEventListener('click', () => {
-            changeDescription(index); // Llamar a la función con el índice de la tarjeta clickeada
+        card.addEventListener("click", () => {
+            changeDescription(index);
         });
     });
 });
 
 function changeDescription(index) {
-    var cards = document.querySelectorAll('.cards');
-    var descripcion = document.getElementById('descripcion');
+    const cards = document.querySelectorAll(".cards");
+    const descripcion = document.getElementById("descripcion");
 
     cards.forEach(function (card) {
-        card.classList.remove('active');
+        card.classList.remove("active");
     });
 
-    cards[index].classList.add('active');
+    cards[index].classList.add("active");
 
     switch (index) {
         case 0:
@@ -73,4 +76,15 @@ function changeDescription(index) {
             descripcion.innerHTML = '<div class="description-content-2"><div><h2 class="titulo-desc-servicios-2">Servicio Destacado</h2><h3 class="titulo-desc-servicios">Pagina Web Empresarial</h3><p class="parrafo-desc-servicios text-muted">Si tu negocio aún no cuenta con un sitio web, entonces es hora de tener una presencia en línea que comunique la marca de tu empresa, así como que muestre información sobre servicios o productos.</p><a href="#" class="btn-descripcion">Más información</a></div><img src="img/desarrolloWebProto.png" alt="Imagen Desarrollo Web" id="descripcionServicios0"></div>';
             break;
     }
+}
+
+// Función para verificar si el elemento está visible en la ventana del navegador
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
