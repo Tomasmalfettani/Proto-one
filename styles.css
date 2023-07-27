@@ -542,7 +542,7 @@ section div a {
 .cards-faq a {
     cursor: pointer;
     transition: color 0.3s ease;
-    margin-top: -2px;
+    margin-top: -3px;
 }
 
 .cards-faq a:hover {
