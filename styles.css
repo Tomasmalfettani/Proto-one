@@ -250,14 +250,14 @@ main {
     width: 500px;
 }
 
-.titulo-segundo {
-    font-weight: bold;
-    font-size: 54px;
-}
-
 .titulo-segundo-2 {
     font-size: 24px;
     color: #007ACC;
+}
+
+.titulo-segundo {
+    font-weight: bold;
+    font-size: 54px;
 }
 
 section div a {
@@ -323,15 +323,15 @@ section div a {
     margin-right: 20px;
 }
 
+.titulo-desc-servicios-2 {
+    font-size: 20px;
+    color: #007ACC;
+}
+
 .titulo-desc-servicios {
     font-size: 48px;
     font-weight: bold;
     margin-top: 15px;
-}
-
-.titulo-desc-servicios-2 {
-    font-size: 20px;
-    color: #007ACC;
 }
 
 .parrafo-desc-servicios {
@@ -358,14 +358,14 @@ section div a {
 
 }
 
-.titulo-crecimiento {
-    font-weight: bold;
-    font-size: 42px;
+.titulo-crecimiento-2 {
+    font-size: 24px;
     color: #007ACC;
 }
 
-.titulo-crecimiento-2 {
-    font-size: 24px;
+.titulo-crecimiento {
+    font-weight: bold;
+    font-size: 42px;
     color: #007ACC;
 }
 
@@ -382,14 +382,14 @@ section div a {
     color: #007ACC;
 }
 
-.titulo-socios-2 {
-    font-size: 24px;
-    color: #007ACC;
-}
-
 .titulo-socios {
     font-weight: bold;
     font-size: 42px;
+    color: #007ACC;
+}
+
+.titulo-socios-2 {
+    font-size: 24px;
     color: #007ACC;
 }
 
@@ -433,7 +433,6 @@ section div a {
     text-decoration: none;
     transition: box-shadow 0.3s;
     margin-top: 25px;
-    margin-left: 10px;
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -515,6 +514,17 @@ section div a {
     width: 150px;
     border-radius: 50%;
     border: 3px solid #007ACC;
+}
+
+.titulo-faq {
+    font-weight: bold;
+    color: #007ACC;
+    font-size: 20px;
+}
+
+.titulo-faq-2 {
+    font-weight: bold;
+    font-size: 42px;
 }
 
 @media (max-width: 820px) {
@@ -626,6 +636,18 @@ section div a {
         font-size: 28px;
     }
 
+    .cards-m {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+    .cards-m {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 @media (min-width: 821px) and (max-width: 1200px) {
