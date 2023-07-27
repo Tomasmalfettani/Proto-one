@@ -536,13 +536,12 @@ section div a {
 .cards-faq h5 {
     font-size: 16px;
     font-weight: bold;
-    margin-top: 4px;
 }
 
 .cards-faq a {
     cursor: pointer;
     transition: color 0.3s ease;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 
 .cards-faq a:hover {
@@ -686,7 +685,7 @@ section div a {
     }
 
     .cards-faq h5 {
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
     }
 
