@@ -558,7 +558,7 @@ section div a {
 .cards-faq.active .faq-answer {
     max-height: 100px;
     opacity: 1;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .cards-faq i {
@@ -567,6 +567,7 @@ section div a {
 
 .faq-answer.hidden {
     display: none;
+    font-size: 12px;
 }
 
 
@@ -685,7 +686,7 @@ section div a {
     }
 
     .cards-faq h5 {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
     }
 
