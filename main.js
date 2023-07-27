@@ -77,3 +77,35 @@ function changeDescription(index) {
             break;
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButtons = document.querySelectorAll('.toggle-answer');
+
+    toggleButtons.forEach((button) => {
+        button.addEventListener('click', function () {
+            const faqAnswer = this.parentElement.nextElementSibling;
+            faqAnswer.classList.toggle('hidden');
+
+            const h5 = this.parentElement.querySelector('h5');
+            if (faqAnswer.classList.contains('hidden')) {
+                h5.style.color = 'black'; 
+                this.querySelector('i').classList.add('bi-plus-circle-fill');
+                this.querySelector('i').classList.remove('bi-dash-circle-fill');
+            } else {
+                h5.style.color = '#007ACC'; 
+                this.querySelector('i').classList.remove('bi-plus-circle-fill');
+                this.querySelector('i').classList.add('bi-dash-circle-fill');
+            }
+        });
+    });
+
+    const faqCards = document.querySelectorAll('.cards-faq');
+
+    faqCards.forEach((card) => {
+        const link = card.querySelector('a');
+        link.addEventListener('click', () => {
+            card.classList.toggle('active');
+        });
+    });
+});
+

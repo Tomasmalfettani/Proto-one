@@ -527,6 +527,49 @@ section div a {
     font-size: 42px;
 }
 
+.cards-faq {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards-faq h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.cards-faq a {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cards-faq a:hover {
+    color: #007ACC;
+}
+
+.cards-faq .faq-answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.cards-faq.active .faq-answer {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.cards-faq i {
+    color: #007ACC;
+}
+
+.faq-answer.hidden {
+    display: none;
+}
+
+
 @media (max-width: 820px) {
     main {
         margin-top: 110px;
@@ -639,6 +682,11 @@ section div a {
     .cards-m {
         margin-left: 30px;
         margin-right: 30px;
+    }
+
+    .cards-faq h5 {
+        font-size: 12px;
+        font-weight: bold;
     }
 
 }
