@@ -552,11 +552,10 @@ section div a {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .cards-faq.active .faq-answer {
-    max-height: 100px;
+    max-height: 300px;
     opacity: 1;
     margin-top: 15px;
 }
@@ -567,7 +566,6 @@ section div a {
 
 .faq-answer.hidden {
     display: none;
-    font-size: 12px;
 }
 
 
@@ -690,8 +688,8 @@ section div a {
         font-weight: bold;
     }
 
-    .faq-answer.hidden {
-        font-size: 8px;
+    .faq-answer {
+        font-size: 12px;
     }
 
 }
