@@ -542,6 +542,7 @@ section div a {
 .cards-faq a {
     cursor: pointer;
     transition: color 0.3s ease;
+    margin-top: -2px;
 }
 
 .cards-faq a:hover {
@@ -685,7 +686,7 @@ section div a {
     }
 
     .cards-faq h5 {
-        font-size: 12px;
+        font-size: 11px;
         font-weight: bold;
     }
 
