@@ -79,32 +79,26 @@ function changeDescription(index) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleButtons = document.querySelectorAll('.toggle-answer');
+    const toggleButtons = document.querySelectorAll('.cards-faq');
 
-    toggleButtons.forEach((button) => {
-        button.addEventListener('click', function () {
-            const faqAnswer = this.parentElement.nextElementSibling;
-            faqAnswer.classList.toggle('hidden');
+    toggleButtons.forEach((card) => {
+        card.addEventListener('click', function () {
+            this.classList.toggle('active');
+            const faqAnswer = this.querySelector('.faq-answer');
+            const h5 = this.querySelector('h5');
+            const icon = this.querySelector('i');
 
-            const h5 = this.parentElement.querySelector('h5');
-            if (faqAnswer.classList.contains('hidden')) {
-                h5.style.color = 'black';
-                this.querySelector('i').classList.add('bi-plus-circle-fill');
-                this.querySelector('i').classList.remove('bi-dash-circle-fill');
-            } else {
+            if (this.classList.contains('active')) {
+                faqAnswer.classList.remove('hidden');
                 h5.style.color = '#007ACC';
-                this.querySelector('i').classList.remove('bi-plus-circle-fill');
-                this.querySelector('i').classList.add('bi-dash-circle-fill');
+                icon.classList.remove('bi-plus-circle-fill');
+                icon.classList.add('bi-dash-circle-fill');
+            } else {
+                faqAnswer.classList.add('hidden');
+                h5.style.color = 'black';
+                icon.classList.remove('bi-dash-circle-fill');
+                icon.classList.add('bi-plus-circle-fill');
             }
-        });
-    });
-
-    const faqCards = document.querySelectorAll('.cards-faq');
-
-    faqCards.forEach((card) => {
-        const link = card.querySelector('a');
-        link.addEventListener('click', () => {
-            card.classList.toggle('active');
         });
     });
 });

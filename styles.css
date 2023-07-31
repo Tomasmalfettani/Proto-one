@@ -531,6 +531,7 @@ section div a {
     background-color: white;
     padding: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .cards-faq h5 {
@@ -540,7 +541,6 @@ section div a {
 }
 
 .cards-faq a {
-    cursor: pointer;
     transition: color 0.3s ease;
     margin-top: -1px;
 }
